@@ -39,6 +39,13 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
+# Add rspec and FactoryBot and configure it to work with 
+# the tasks database table
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem "factory_bot_rails"
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
